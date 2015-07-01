@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name" translatable="false">HappyBirthday</string>
+    <string name="logout">LOGOUT</string>
+    <string name="loginText">LOGIN USING YOUR GOOGLE ACCOUNT</string>
+</resources>
