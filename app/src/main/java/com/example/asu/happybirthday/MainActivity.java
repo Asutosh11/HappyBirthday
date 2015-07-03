@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.IntentSender.SendIntentException;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -39,7 +40,7 @@ public class MainActivity extends Activity implements OnClickListener, Connectio
     private ConnectionResult mConnectionResult;
     private SignInButton signinButton;
     private ImageView image;
-    private TextView username, emailLabel;
+    private TextView username;
     private LinearLayout profileFrame, signinFrame;
 
 
@@ -52,10 +53,15 @@ public class MainActivity extends Activity implements OnClickListener, Connectio
         signinButton.setOnClickListener(this);
 
         image = (ImageView) findViewById(R.id.image);
+
         username = (TextView) findViewById(R.id.username);
-        emailLabel = (TextView) findViewById(R.id.email);
+
+        String fontPath = "fonts/Pacifico.ttf";
+        Typeface tf = Typeface.createFromAsset(getAssets(), fontPath);
+        username.setTypeface(tf);
 
         profileFrame = (LinearLayout) findViewById(R.id.profileFrame);
+
         signinFrame = (LinearLayout) findViewById(R.id.signinFrame);
 
         mGoogleApiClient = new GoogleApiClient.Builder(this).addConnectionCallbacks(this).addOnConnectionFailedListener(this).addApi(Plus.API, Plus.PlusOptions.builder().build()).addScope(Plus.SCOPE_PLUS_LOGIN).build();
