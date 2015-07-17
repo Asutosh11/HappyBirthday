@@ -6,6 +6,8 @@ In this app, someone logs in via her/his Google ID, the app retrieves user's ful
 <br>
 1. Google Login.
 <br>
+2. Custom font
+<br>
 <br>
 
 
