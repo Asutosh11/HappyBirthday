@@ -1,3 +1,14 @@
+In this app, someone logs in via her/his Google ID, the app retrieves user's full name and profile photo and wishes 'Happy Birthday'.
+
+
+<br>
+<b>This app uses</b>
+<br>
+1. Google Login.
+<br>
+<br>
+
+
 <b>Screenshots</b>
 
 1. <br>
